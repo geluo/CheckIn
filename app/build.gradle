@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            //C:/Users/vac/Desktop/checkin_keystore/checkin.jks
+            storeFile file('E:/sign/checkin.jks')
+            keyAlias 'checkin'
+            keyPassword '1234567890'
+            storePassword '1234567890'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.blackbird.checkin"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+//    signingConfigs{
+//        release{
+//            storeFile file("C:\\Users\\vac\\Desktop\\checkin_keystore/checkin.jks");
+//            storePassword 1234567890
+//            keyAlias checkin
+//            keyPassword 1234567890
+//        }
+//        debug{
+//            storeFile file("C:\\Users\\vac\\Desktop\\checkin_keystore/checkin.jks")
+//            storePassword 1234567890
+//            keyAlias checkin
+//            keyPassword 1234567890
+//        }
+//    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile files('src/main/lib/android-async-http-1.4.4.jar')
+    compile 'org.apache.httpcomponents:httpcore:4.4.2'
+    compile files('src/main/lib/zrclistview.jar')
+    compile files('src/main/lib/fastjson-1.1.37.jar')
+    compile files('src/main/lib/zxing.jar')
+}

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--<item android:id="@+id/action_allPlayers" android:title="@string/action_all"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_noCompletedPlayers" android:title="@string/action_nocompleted"
+    android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_completedPlayers" android:title="@string/action_completed"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="退出"
+        app:showAsAction="always"
+        android:textSize="25sp"/>
+
+</menu>

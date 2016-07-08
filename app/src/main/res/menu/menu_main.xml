@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--<item android:id="@+id/action_allPlayers" android:title="@string/action_all"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_noCompletedPlayers" android:title="@string/action_nocompleted"
+    android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_completedPlayers" android:title="@string/action_completed"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="同步(0)"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_checkpoint"
+        android:orderInCategory="100"
+        android:title="选择签到点"
+        app:showAsAction="always" />
+</menu>

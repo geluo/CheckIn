@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">黑鸟赛事</string>
+    <string name="action_all">全部</string>
+    <string name="action_nocompleted">未打卡</string>
+    <string name="action_completed">已打卡</string>
+    <string name="choose_point">选择签到点</string>
+</resources>
